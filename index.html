@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+            font-family: 'Courier New', monospace;
+            background-color: #1a1a1a;
+            color: #d9d9d9;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #666;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #4CAF50;
+            font-size: 28px;
+        }
+
+        header p {
+            color: #ccc;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .post-box {
+            border: 2px solid #333;
+            padding: 20px;
+            margin: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            background-color: #2a2a2a;
+            color: #d9d9d9;
+        }
+
+        .post-box h2 {
+            margin-top: 0;
+            color: #4CAF50;
+            font-size: 24px;
+        }
+
+        .post-box p {
+            color: #ccc;
+        }
+
+        .post-box:hover {
+            background-color: #1f1f1f;
+        }
+
+        footer {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            color: #ccc;
+            font-size: 14px;
+            border-top: 2px solid #666;
+        }
+  
+</style>  
+    <title>Rover's Byte</title>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+ 
+</head>
+<body>
+  
+   <header>
+        <h1>Rover's Byte <img src="https://static.wikia.nocookie.net/the-microsoft-windows-xp/images/5/57/Latest_%281%29.png" alt="Rover" style="height: 50px; vertical-align: text-bottom;"> </h1>
+        <p>Exploring the bit between Bytes</p>
+
+    </header>
+
+<div id="particles-js">
+   
+
+    <main id="content">
+   
+<!--      <div class="post-box" onclick="window.location.href='article1.html';">
+            <h2>Article 1</h2>
+            <p>text</p>
+        </div> -->
+
+        <!-- Add more post boxes as needed -->
+
+    </main>
+</div>
+    <footer>
+        <p>&copy; 2023 Rover's Byte</p>
+    </footer>
+  
+  
+
+ 
+</body>
+  
+<script>
+  /* ---- particles.js config ---- */
+
+particlesJS("particles-js", {
+  particles: {
+    number: {
+      value: 20,
+      density: {
+        enable: true,
+        value_area: 800
+      }
+    },
+    color: {
+      value: "#ffffff"
+    },
+    shape: {
+      type: "circle",
+      stroke: {
+        width: 0,
+        color: "#000000"
+      },
+      polygon: {
+        nb_sides: 5
+      },
+      image: {
+        src: "img/github.svg",
+        width: 100,
+        height: 100
+      }
+    },
+    opacity: {
+      value: 0.5,
+      random: false,
+      anim: {
+        enable: false,
+        speed: 1,
+        opacity_min: 0.1,
+        sync: false
+      }
+    },
+    size: {
+      value: 2.5,
+      random: true,
+      anim: {
+        enable: true,
+        speed: 1,
+        size_min: 0.1,
+        sync: false
+      }
+    },
+    line_linked: {
+      enable: false,
+      distance: 150,
+      color: "#ffffff",
+      opacity: 0.4,
+      width: 1
+    },
+    move: {
+      enable: true,
+      speed: 0.1,
+      direction: "none",
+      random: false,
+      straight: false,
+      out_mode: "out",
+      bounce: false,
+      attract: {
+        enable: false,
+        rotateX: 600,
+        rotateY: 1200
+      }
+    }
+  },
+  interactivity: {
+    detect_on: "canvas",
+    events: {
+      onhover: {
+        enable: false,
+        mode: "repulse"
+      },
+      onclick: {
+        enable: false,
+        mode: "push"
+      },
+      resize: true
+    },
+    modes: {
+      grab: {
+        distance: 400,
+        line_linked: {
+          opacity: 1
+        }
+      },
+      bubble: {
+        distance: 400,
+        size: 40,
+        duration: 2,
+        opacity: 8,
+        speed: 3
+      },
+      repulse: {
+        distance: 200,
+        duration: 0.4
+      },
+      push: {
+        particles_nb: 4
+      },
+      remove: {
+        particles_nb: 2
+      }
+    }
+  },
+  retina_detect: true
+});
+
+
+  
+</script>  
+</html>
